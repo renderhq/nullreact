@@ -1,0 +1,20 @@
+{
+  "name": "nullreact-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean",
+    "example:counter": "pnpm -F nullreact-example-counter dev",
+    "example:todomvc": "pnpm -F nullreact-example-todomvc dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  },
+  "packageManager": "pnpm@8.15.1",
+  "author": "Render"
+}

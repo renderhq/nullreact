@@ -1,82 +1,18 @@
-# === Rust ===
-/target/
-**/*.rs.bk
-Cargo.lock
-*.rlib
-*.dSYM/
-
-# === JavaScript / TypeScript ===
 node_modules/
 dist/
 build/
+.DS_Store
 *.log
-*.tsbuildinfo
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# === Bun / Deno (if used) ===
-.bun/
-deno.lock
-deno_dir/
-
-# === Environment Files ===
-.env
-.env.*.local
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# === Editor / IDE ===
+*.lock
 .vscode/
 .idea/
-*.code-workspace
-*.sublime*
-*.sw?
-
-# === OS / System Files ===
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-
-# === Coverage / Reports ===
+*.swp
+*.swo
+.env
+.env.local
 coverage/
-*.lcov
 .nyc_output/
-test-results/
-reports/
-
-# === Binary / Output / Debug ===
-*.out
-*.exe
-*.obj
-*.dll
-*.class
-*.wasm
-*.map
-
-# === Logs / Temp / Cache ===
-*.tmp
-*.temp
-.cache/
-.pnp.*
-*.log
-*.pid
-*.seed
-
-# === Git ===
-*.orig
-*.rej
-*.patch
-*.bak
-
-# === Benchmarks ===
-/benches/*.log
-/tests/output/
-
-# === Custom ===
-/docs/gen/
-*.iml
-*.lock-wip
+*.tgz
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --accents-1: #fafafa;
+    --accents-2: #eaeaea;
+    --accents-3: #999999;
+    --accents-4: #888888;
+    --accents-5: #666666;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 10vh;
+}
+
+.todoapp {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 1rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 2rem;
+    letter-spacing: -0.1rem;
+}
+
+.new-todo {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    border: 1px solid var(--accents-2);
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+    background: var(--background);
+}
+
+.new-todo:focus {
+    border-color: var(--foreground);
+}
+
+.main {
+    margin-top: 2rem;
+    border: 1px solid var(--accents-2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.todo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list li {
+    border-bottom: 1px solid var(--accents-2);
+    background: var(--background);
+    transition: background 0.2s ease;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li .view {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+
+.todo-list li .toggle {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--foreground);
+    margin-right: 1rem;
+}
+
+.todo-list li label {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+}
+
+.todo-list li.completed label {
+    color: var(--accents-3);
+    text-decoration: line-through;
+}
+
+.todo-list li .destroy {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--accents-3);
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+.todo-list li:hover .destroy {
+    display: block;
+}
+
+.todo-list li .destroy:hover {
+    color: var(--foreground);
+}
+
+.edit {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    border: none;
+    outline: 2px solid var(--foreground);
+    font-family: inherit;
+}
+
+.footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--accents-5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--accents-2);
+    border-radius: 8px;
+    background: var(--accents-1);
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters li a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.filters li a.selected {
+    background: var(--foreground);
+    color: var(--background);
+}
+
+.filters li a:hover:not(.selected) {
+    border-color: var(--accents-2);
+}
+
+.clear-completed {
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    color: var(--accents-5);
+    cursor: pointer;
+    padding: 0;
+}
+
+.clear-completed:hover {
+    text-decoration: underline;
+}
+
+.info {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--accents-3);
+    font-size: 0.75rem;
+}
+
+.info a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info a:hover {
+    color: var(--foreground);
+}

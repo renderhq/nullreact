@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "Fragment",
+        "noEmit": true
+    },
+    "include": [
+        "index.ts"
+    ]
+}
